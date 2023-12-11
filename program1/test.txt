@@ -1,0 +1,28 @@
+andyd@jesus:~/311/hw/program1$ time ./sloppySim 
+with simulation parameters:
+	N_Threads=2
+ 	Sloppiness=10
+ 	WorkTime=10
+ 	WorkIterations=100
+ 	CPU_Bound=false
+ 	DoLogging=false
+Final Global Count: 200
+
+real	0m1.022s
+user	0m0.000s
+sys	0m0.011s
+this is a default execution
+
+andyd@jesus:~/311/hw/program1$ time ./sloppySim 4 5 11 100 true
+with simulation parameters:
+	N_Threads=4
+ 	Sloppiness=5
+ 	WorkTime=11
+ 	WorkIterations=100
+ 	CPU_Bound=true
+ 	DoLogging=false
+Final Global Count: 400
+
+real	0m2.011s
+user	0m7.970s
+sys	0m0.000s
